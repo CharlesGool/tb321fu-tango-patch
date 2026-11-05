@@ -49,7 +49,7 @@
 | --- | --- |
 | `heraldctl tango status` | 模块, 32 位 ABI, 是否回退及原因 |
 | `heraldctl tango retry` | 删除回退标记, 下次开机重新带 32 位 |
-| `heraldctl tango off` | 写回退标记, 下次开机按纯 64 位. 默认 `ENFORCE=0` 时不生效, 见 [LOG 缺陷](../../../doc/LOG.md#缺陷) |
+| `heraldctl tango off` | 写回退标记, 下次开机按纯 64 位. 默认 `ENFORCE=0` 时不生效, 见 [LOG 缺陷](https://github.com/CharlesGool/tb321fu-tango-patch/blob/main/doc/LOG.md#缺陷) |
 | `heraldctl tango logs` | 导出日志到 `/data/local/tmp/tango_log` |
 | `heraldctl tango zygote32 start\|stop` | 回退状态下手动起停 32 位 zygote, 用于隔离测试 |
 

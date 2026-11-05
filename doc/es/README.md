@@ -58,10 +58,11 @@ Las ubicaciones por defecto son `private/tango/pkg/`, `private/tango/tango32.ko`
 
 ### Instalación normal
 
-Sustituya la copia de Mods por la versión de este repositorio y construya de nuevo:
+Clone este repositorio junto a Mods (mismo directorio padre), sincronice la copia desde Mods y construya. Para otra ubicación, defina `TANGO_PATCH_DIR`:
 
 ```bash
-rsync -a --delete patch/ <TB321FU-GSI-Mods>/patches/required/general/tango/
+cd <TB321FU-GSI-Mods>
+make sync-tango
 ```
 
 ## Uso

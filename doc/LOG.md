@@ -57,10 +57,9 @@ metadata:
 ## 交接
 
 - 当前分支: `main`.
-- 已完成: 从 TB321FU-GSI-Mods `main` 提取 `patches/required/general/tango/` 到 `patch/`, 代码未改; 按项目模板建立文档并翻译为英文和西班牙语; 补丁说明按现行代码订正 (insmod 时机, 开机保险默认 `ENFORCE=0`, `TANGO_DEBUG` 默认值).
+- 已完成: Mods 改为用 `make sync-tango` 从本仓库同步 `patch/`; 从 TB321FU-GSI-Mods `main` 提取 `patches/required/general/tango/` 到 `patch/`, 代码未改; 按项目模板建立文档并翻译为英文和西班牙语; 补丁说明按现行代码订正 (insmod 时机, 开机保险默认 `ENFORCE=0`, `TANGO_DEBUG` 默认值).
 - 检查: shell 脚本 `bash -n` 和 Python `py_compile` 通过; 文档链接检查通过. 本仓库内没有可运行的构建或测试, 补丁未在本仓库重新构建.
 - 剩余步骤:
-  - [ ] 在 Mods 中改为从本仓库同步 `patch/` (参照 herald-core 的 `make sync-core`), 并让 Mods 文档指向本仓库.
   - [ ] 修复 `heraldctl tango off` 在 `ENFORCE=0` 时不生效的缺陷.
   - [ ] 向 Amanieu Systems 确认 Tango 集成文件 (binfmt 注册串, sepolicy) 的授权, 见 [THIRD_PARTY_NOTICES](THIRD_PARTY_NOTICES.md#合规审查).
 - 阻碍: 无.

@@ -55,10 +55,11 @@ make 9008 NOTE="tango"
 
 ### 常规安装
 
-用本仓库的版本替换 Mods 中的副本, 再构建:
+把本仓库克隆到 Mods 旁边 (同一父目录), 在 Mods 中同步副本后再构建. 其他位置用 `TANGO_PATCH_DIR` 指定:
 
 ```bash
-rsync -a --delete patch/ <TB321FU-GSI-Mods>/patches/required/general/tango/
+cd <TB321FU-GSI-Mods>
+make sync-tango
 ```
 
 ## 指南

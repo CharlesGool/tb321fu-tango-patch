@@ -53,4 +53,4 @@ adb shell heraldctl tango status
 
 ## 授权
 
-`tango_translator`, Tango 集成包, `tango32.ko` 和小米的 32 位库都**禁止**进仓库, 也**禁止**放进分发给他人的刷机包. 仓库只放小米库的文件名和 SHA-256 清单. 详见 [第三方声明](../doc/THIRD_PARTY_NOTICES.md).
+`tango_translator`, Tango 集成包, `tango32.ko` 和小米的 32 位库都**禁止**进仓库, 也**禁止**放进分发给他人的刷机包. 仓库只放小米库的文件名和 SHA-256 清单. 详见 [第三方声明](https://github.com/CharlesGool/tb321fu-tango-patch/blob/main/doc/THIRD_PARTY_NOTICES.md).
